@@ -1,0 +1,39 @@
+header {
+ width: 100%;
+ padding: 15px;
+ border-bottom: 7px solid olive;
+ background-color: #eee8aa;
+}
+
+footer{
+ width: 100%;
+ padding: 30px;
+ border-top: 7px solid olive;
+ background-color: #eee8aa;
+}
+
+.partial {
+ border: 1px solid red;
+ padding: 15px;
+}
+
+
+
+table th {
+ background-color: #6b8e23;
+ padding: 20px 20px;
+}
+
+table td {
+ background-color: #eee8aa;
+ padding: 20px 40px;
+}
+
+.notice {
+  background-color: #ccf;
+  padding: 5px;
+}
+
+#view_time{
+  padding: 0px 20px;
+}
