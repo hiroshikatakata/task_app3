@@ -1,0 +1,11 @@
+<% if @schedule.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@schedule.errors.count, "error") %> はこのスケジュールの保存を禁止しています:</h2>
+
+    <ul>
+    <% @schedule.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>

@@ -1,0 +1,44 @@
+
+<%= form_with model: @schedule,local: true do |f| %>
+
+ <table>
+  <tr>
+   <th><%= f.label :name ,"タイトル" %></th>
+   <td><%= f.text_field :name %></td>
+  </tr>
+
+  <tr>
+   <th><%= f.label :start ,"開始日" %></th>
+   <td>
+     <%= f.date_select :start %>
+   </td>
+  </tr>
+
+  <tr>
+   <th><%= f.label :end_day ,"終了日" %></th>
+   <td>
+     <%= f.date_select :end_day %>
+   </td>
+  </tr>
+
+  <tr>
+   <th><%= f.label :check ,"終日" %></th>
+   <td>
+     <%= f.check_box :check, {} ,"○"," " %>
+     終日の場合はチェックを入れます
+   </td>
+  </tr>
+
+  <tr>
+   <th><%= f.label :introduction ,"スケジュールメモ" %></th>
+   <td><%= f.text_area :introduction %></td>
+   </tr>
+  </table>
+
+  <div>
+    <ul>
+     <li><%= f.submit "スケジュールを新規登録する"%></li>
+     <li><%= link_to "スケジュール一覧に戻る", :schedules %></li>
+    </ul>
+  </div>
+ <% end %>
